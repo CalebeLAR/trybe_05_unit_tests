@@ -18,6 +18,15 @@
   Caso a função seja chamada sem nenhum parâmetro, o valor undefined deve ser retornado.
 */
 
-const vqv = () => {};
+const vqv = (name, age) => {
+ if (typeof name !== 'string') {
+  return undefined; 
+ } 
 
+// eslint-disable-next-line max-len
+const string = `Oi, meu nome é ${name}!\nTenho ${age} anos,\ntrabalho na Trybe e mando muito em programação!\n#VQV!`;
+return string;
+};
+
+console.log(vqv('calebe', 54));
 module.exports = vqv;
