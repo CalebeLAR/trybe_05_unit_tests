@@ -31,7 +31,7 @@ const productDetails = (firstProduct, secondProduct) => [
   {
     name: firstProduct,
     details: {
-      productId: `${firstProduct}123`,
+    productId: `${firstProduct}123`,
     },
   },
   {
@@ -41,5 +41,6 @@ const productDetails = (firstProduct, secondProduct) => [
     },
   },
 ];
-
+let array = productDetails('firstProduct', 'secondProduct');
+console.log(array[0]);
 module.exports = productDetails;

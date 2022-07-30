@@ -31,13 +31,46 @@ const productDetails = require('../src/productDetails');
 
 describe('6 - Implemente os casos de teste para a função `productDetails`', () => {
   it('Verifica se a função `productDetails` tem o comportamento esperado', () => {
-    fail('Teste vazio!');
-    // ESCREVA SEUS TESTES ABAIXO:
     // Teste se productDetails é uma função.
+    expect(typeof productDetails).toBe('function');
+  });
+
+  it('Verifica se o array retornado pela função contém dois itens dentro.', () => {
+    // Verifica se o array retornado pela função contém dois itens dentro.
+    expect(productDetails('firstProduct', 'secondProduct').length).toBe(2);
+  });
+
+  it('Verifica se os dois itens dentro do array retornado pela função são objetos.', () => {
+    // Verifica se os dois itens dentro do array retornado pela função são objetos.
+    const outroArray = productDetails('firstProduct', 'secondProduct');
+    expect(outroArray[0]).toMatchObject({ name: 'firstProduct', details: { productId: 'firstProduct123' } });
+    expect(outroArray[1]).toMatchObject({ name: 'secondProduct', details: { productId: 'secondProduct123' } });
     // Teste se o retorno da função é um array.
-    // Teste se o array retornado pela função contém dois itens dentro.
-    // Teste se os dois itens dentro do array retornado pela função são objetos.
-    // Teste se quando passado parâmetros diferentes entre si, os dois objetos também são diferentes entre si.
-    // Teste se os dois productIds terminam com 123.
+    const array = productDetails('firstProduct', 'secondProduct');
+    //verifica se o retorno da função é um objeto;
+    expect(typeof array).toBe('object');
+    //verifica é possivel dar PUSH no retorno da função;
+    array.push('itemTest');
+    expect(typeof array).toBe('object');
+    //verifica se é possivel dar LENGTH no retorno da função;
+    expect(typeof array.length).toBe('number');
+  });
+
+  it('Verifica se quando passado parâmetros diferentes entre si, os dois objetos também são diferentes entre si.', () => {
+    // Verifica se quando passado parâmetros diferentes entre si, os dois objetos também são diferentes entre si.
+    // f(x,x) != f(x, y)
+    let x = 'firstProduct';
+    let y = 'secondProduct';
+    expect(productDetails(x, y)).not.toBe(productDetails(x, x));
+    expect(productDetails(x, y)).not.toBe(productDetails(y, y));
+  });
+
+  it('Verifica se os dois productIds terminam com 123.', () => {
+    // Verifica se os dois productIds terminam com 123.
+    const ultimoArray = productDetails('firstProduct', 'secondProduct');
+    let productIds0 = ultimoArray[0].details.productId
+    let productIds1 = ultimoArray[1].details.productId
+    expect(productIds0).toMatch(/123/);
+    expect(productIds1).toMatch(/123/);
   });
 });
