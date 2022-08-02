@@ -23,8 +23,10 @@ const vqv = (name, age) => {
   return undefined; 
  } 
 
-// eslint-disable-next-line max-len
-const string = `Oi, meu nome é ${name}!\nTenho ${age} anos,\ntrabalho na Trybe e mando muito em programação!\n#VQV!`;
+  const string = (
+    `Oi, meu nome é ${name}!\nTenho ${age} anos,
+trabalho na Trybe e mando muito em programação!\n#VQV!`
+  );
 return string;
 };
 
