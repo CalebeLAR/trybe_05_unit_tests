@@ -21,7 +21,6 @@
   A função createMenu() então, retornará um novo objeto. Este novo objeto contém algumas chaves e ao acessar cada uma delas temos os seguintes retornos:
 
   - Uma chave `fetchMenu` retornando o menu, que nada mais é que o objeto passado como parâmetro para createMenu()
-
     Exemplo:
     const meuRestaurante = createMenu({
       food: {'coxinha': 3.90, 'sanduiche', 9.90},
@@ -93,6 +92,17 @@
 // - retornará o valor somado acrescido de 10%.
 // DICA: para isso, você precisará percorrer tanto o objeto da chave `food` quanto o objeto da chave `drink`.
 
-const createMenu = () => {};
+// Restaurante.fetchMenu()`consumption`order` armazenando uma função(string)valor de consmp,string, pay: soma dos preços
 
+const createMenu = (object) => {
+  // eslint-disable-next-line prefer-object-spread, sonarjs/prefer-object-literal
+  let newObject = {};
+  // eslint-disable-next-line prefer-object-spread
+  newObject.fetchMenu = () => Object.assign({}, object);
+  return newObject;
+};
+
+// const obj = { food: { coxinha: 3.9, sopa: 9.9 }, drink: { agua: 3.9, cerveja: 6.9 } };
+// const t = createMenu(obj);
+// console.log(typeof t.fetchMenu);
 module.exports = createMenu;
