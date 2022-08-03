@@ -1,3 +1,4 @@
+/* eslint-disable sonarjs/prefer-object-literal */
 /* eslint-disable max-len */
 
 /*
@@ -95,14 +96,12 @@
 // Restaurante.fetchMenu()`consumption`order` armazenando uma função(string)valor de consmp,string, pay: soma dos preços
 
 const createMenu = (object) => {
-  // eslint-disable-next-line prefer-object-spread, sonarjs/prefer-object-literal
-  let newObject = {};
-  // eslint-disable-next-line prefer-object-spread
-  newObject.fetchMenu = () => Object.assign({}, object);
+  let newObject = { fetchMenu: () => ({ ...object }) };
+  // newObject.fetchMenu = () => ({ ...object });
   return newObject;
 };
 
-// const obj = { food: { coxinha: 3.9, sopa: 9.9 }, drink: { agua: 3.9, cerveja: 6.9 } };
-// const t = createMenu(obj);
-// console.log(typeof t.fetchMenu);
+const obj = { food: { coxinha: 3.9, sopa: 9.9 }, drink: { agua: 3.9, cerveja: 6.9 } };
+const t = createMenu(obj);
+console.log(t.fetchMenu());
 module.exports = createMenu;
