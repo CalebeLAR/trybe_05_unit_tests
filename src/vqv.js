@@ -30,5 +30,4 @@ trabalho na Trybe e mando muito em programação!\n#VQV!`
 return string;
 };
 
-console.log(vqv('calebe', 54));
 module.exports = vqv;

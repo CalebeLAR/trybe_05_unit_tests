@@ -42,5 +42,5 @@ const productDetails = (firstProduct, secondProduct) => [
   },
 ];
 let array = productDetails('firstProduct', 'secondProduct');
-console.log(array[0]);
+
 module.exports = productDetails;
