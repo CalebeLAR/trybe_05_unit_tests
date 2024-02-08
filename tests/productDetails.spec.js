@@ -41,7 +41,6 @@ describe('6 - Implemente os casos de teste para a função `productDetails`', ()
   });
 
   it('Verifica se os dois itens dentro do array retornado pela função são objetos.', () => {
-    // Verifica se os dois itens dentro do array retornado pela função são objetos.
     const outroArray = productDetails('firstProduct', 'secondProduct');
     expect(outroArray[0]).toMatchObject({ name: 'firstProduct', details: { productId: 'firstProduct123' } });
     expect(outroArray[1]).toMatchObject({ name: 'secondProduct', details: { productId: 'secondProduct123' } });
@@ -57,8 +56,6 @@ describe('6 - Implemente os casos de teste para a função `productDetails`', ()
   });
 
   it('Verifica se quando passado parâmetros diferentes entre si, os dois objetos também são diferentes entre si.', () => {
-    // Verifica se quando passado parâmetros diferentes entre si, os dois objetos também são diferentes entre si.
-    // f(x,x) != f(x, y)
     let x = 'firstProduct';
     let y = 'secondProduct';
     expect(productDetails(x, y)).not.toBe(productDetails(x, x));
@@ -66,7 +63,6 @@ describe('6 - Implemente os casos de teste para a função `productDetails`', ()
   });
 
   it('Verifica se os dois productIds terminam com 123.', () => {
-    // Verifica se os dois productIds terminam com 123.
     const ultimoArray = productDetails('firstProduct', 'secondProduct');
     let productIds0 = ultimoArray[0].details.productId
     let productIds1 = ultimoArray[1].details.productId
