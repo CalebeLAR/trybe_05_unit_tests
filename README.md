@@ -8,8 +8,8 @@ Este repositório do repositório **Unit Tests** da Trybe contém implementaraç
 - Página **HTML estruturada** com as tags corretas nos contextos apropriados
 - **Escrita e cobertura** de **testes automatizados** para reforçar a confiabilidade do código.
 
-## ✅ Funções Implementadas
-### Requisitos do Projeto
+## ✅ Funções Implementadas  
+### Requisitos do Projeto  
 <img alt="icon-jest" src="./readme-jest-icon.png" width="20"/> - Implementação da função `average`<br>
 <img alt="icon-jest" src="./readme-jest-icon.png" width="20"/> - Implementação dos casos de teste para a função `numbers`<br>
 <img alt="icon-jest" src="./readme-jest-icon.png" width="20"/> - Implementação da função `vqv`<br>
@@ -31,7 +31,7 @@ src/
  ├── numbers.js  
  ├── productDetails.js  
  └── vqv.js  
-tests/                      # testes implementados no exercício
+tests/                      # testes implementados no exercício  
  ├── circle.spec.js  
  ├── getCharacter.spec.js  
  ├── numbers.spec.js  
