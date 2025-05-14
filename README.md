@@ -1,46 +1,61 @@
-# Unit Tests  
+# Projeto Unit Tests 🚀
 
-## O que é o projeto
-Implementação de várias funções na resolução dos exercícios propostos e/ou testes unitários para garantir que as implementações das funções estão corretas, de acordo com o que está sendo solicitado em cada enunciado.
+Este repositório do repositório **Unit Tests** da Trybe contém implementaração de testes para funções javascript usando a biblioteca Jest.  
 
-O enunciado dos exercícios está escrito comentado no inicio arquivos onde foram desenvolvidos.   
+## 🛠️ Tecnologias e Conceitos Utilizados
+- Código **adere aos requisitos** e se comporta como especificado.
+- **Organização do código** em funções pequenas simples bendefinidas.
+- Página **HTML estruturada** com as tags corretas nos contextos apropriados
+- **Escrita e cobertura** de **testes automatizados** para reforçar a confiabilidade do código.
 
-Nesse projeto:  
-* foram desenvolvidos testes unitários utilizando o módulo Jest do NodeJS para verificar o correto   funcionamento das funções;  
-* foram desenvolvidas funções de forma que elas atendam a testes já implementados;  
-* foram desenvolvidos testes e funções utilizando uma abordagem de desenvolvimento orientado a testes.  
+## ✅ Funções Implementadas
+### Requisitos do Projeto
+<img alt="icon-jest" src="./readme-jest-icon.png" width="20"/> - Implementação da função `average`<br>
+<img alt="icon-jest" src="./readme-jest-icon.png" width="20"/> - Implementação dos casos de teste para a função `numbers`<br>
+<img alt="icon-jest" src="./readme-jest-icon.png" width="20"/> - Implementação da função `vqv`<br>
+<img alt="icon-jest" src="./readme-jest-icon.png" width="20"/> - Implementação dos casos de teste para a função `circle`<br>
+<img alt="icon-jest" src="./readme-jest-icon.png" width="20"/> - Implementação da função `createStudent`<br>
+<img alt="icon-jest" src="./readme-jest-icon.png" width="20"/> - Implementação dos casos de teste para a função `productDetails`<br>
+<img alt="icon-jest" src="./readme-jest-icon.png" width="20"/> - Implementação das funções `calculator` e `arrayGenerator`<br>
+<img alt="icon-jest" src="./readme-jest-icon.png" width="20"/> - Implementação da função `myCounter`<br>
+<img alt="icon-jest" src="./readme-jest-icon.png" width="20"/> - Implementação dos casos de teste para a função `getCharacter`<br>
 
-## Como executar
-Todos os requisitos do projeto serão testados automaticamente por meio do Jest.  
 
-**1. Clone o repositório**  
-```shell
-    git clone git@github.com:CalebeLAR/tryproject_unit_tests.git  
+## 📁 Estrutura do Projeto
+src/  
+ ├── average.js  
+ ├── circle.js  
+ ├── createStudent.js  
+ ├── getCharacter.js  
+ ├── myCounter.js  
+ ├── numbers.js  
+ ├── productDetails.js  
+ └── vqv.js  
+tests/                      # testes implementados no exercício
+ ├── circle.spec.js  
+ ├── getCharacter.spec.js  
+ ├── numbers.spec.js  
+ └── productDetails.spec.js  
+
+
+## ▶️ Como Executar o Projeto
+
+#### Clone o repositório.
+```bash
+git clone git@github.com:CalebeLAR/trybe_05_unit_tests.git
 ```
 
-**2. Instale as dependências**  
-```shell
-    npm install  
+#### instale as dependências.
+```bash
+npm install
 ```
 
-**3. Verifique a implementação dos testes  automatizados usados.**  
-```shell
-    npm test 
+#### rode os testes
+```bash
+npm test
 ```
-```shell
-    npm test caminho/para/arquivo  
-```
-## Requisitos  
-**1. Função average**  
-**2. Casos de teste para a função numbers**  
-**3. Função vqv**  
-**4. Casos de teste para a função circle**  
-**5. Função createStudent**  
-**6. Casos de teste para a função productDetails**  
-**7. Funções calculator e arrayGenerator**  
-**8. Função myCounter**  
-**9. Casos de teste para a função getCharacter**  
+<img src="./radme-image-coverage.png" alt="Cobertura de Testes" width="800"/>
 
-## sobre o desenvolvimento
-Quinto projeto do modulo de fundamentos que desenvolvi durante a formação na trybe.  
-Todos os arquivos javascript e de testes foram desenvolvidos por mim durante o exercício. Configurações de lint e enunciados de cada exercício foram desenvolvidos pela escola.  
+
+### 🤝 Contribuição
+Este é um projeto desenvolvido individuamente como parte do curso de Desenvolvimento Web da Trybe. Pull requests não serão aceitos, mas feedbacks são sempre bem-vindos!
