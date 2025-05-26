@@ -1,6 +1,6 @@
 # Projeto Unit Tests 🚀
 
-Este repositório do repositório **Unit Tests** da Trybe contém implementaração de testes para funções javascript usando a biblioteca Jest.  
+Este repositório do projeto **Unit Tests** da Trybe contém implementaração de testes para funções javascript usando a biblioteca Jest.  
 
 ## 🛠️ Tecnologias e Conceitos Utilizados
 - Código **adere aos requisitos** e se comporta como especificado.
